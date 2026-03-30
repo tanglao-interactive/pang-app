@@ -14,28 +14,20 @@ type Capability = {
 
 const products: Product[] = [
   {
-    name: "Pang Flow",
-    label: "Operations platform",
+    name: "Pang Daily Planner",
+    label: "Daily planning application",
     description:
-      "A structured operating layer for teams that need approvals, status clarity, and repeatable execution without enterprise bloat.",
-    status: "Launching platform",
-    cta: "Product preview"
+      "A focused planning workspace for organizing daily priorities, maintaining momentum, and giving teams a clearer rhythm for execution.",
+    status: "Available soon at daily-planner.pang-app.com",
+    cta: "See Pang Daily Planner"
   },
   {
-    name: "Pang Signal",
-    label: "Monitoring application",
+    name: "Pang Intake",
+    label: "Intake management application",
     description:
-      "A subscription application that turns operational activity into clear decision signals, alerts, and executive-ready reporting.",
-    status: "In roadmap",
-    cta: "View concept"
-  },
-  {
-    name: "Pang Desk",
-    label: "Service workspace",
-    description:
-      "A managed workspace for customer-facing teams that need a tighter handoff between workflows, subscriptions, and support operations.",
-    status: "In design",
-    cta: "Explore direction"
+      "A structured intake experience for capturing requests, organizing submissions, and giving teams a more reliable front door for incoming work.",
+    status: "Live application",
+    cta: "Explore Pang-Intake"
   }
 ];
 
