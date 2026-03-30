@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Tanglao, Corp | Software products built to run",
+  title: "Pang App | Clearer operations for modern teams",
   description:
-    "Tanglao, Corp builds and operates subscription-based software products designed for modern teams."
+    "Pang App is a subscription-based software platform by Tanglao, Corp, built to help teams work with more clarity and consistency."
 };
 
 export default function RootLayout({

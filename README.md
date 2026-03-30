@@ -1,10 +1,11 @@
 # Pang App
 
-Corporate marketing site for **Tanglao, Corp**, built with Next.js.
+Marketing site for **Pang App**, built with Next.js.
 
 ## Purpose
 
 This repository contains the public-facing website for `pang-app.com`. The site presents Tanglao, Corp as the parent company behind a growing portfolio of subscription-based software products.
+This repository contains the public-facing website for `pang-app.com`. The site presents Pang App as the primary product/platform, with Tanglao, Corp positioned as the company behind it.
 
 ## Stack
 

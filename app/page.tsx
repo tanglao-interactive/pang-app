@@ -41,15 +41,15 @@ const products: Product[] = [
 
 const capabilities: Capability[] = [
   {
-    title: "Product design with operating depth",
+    title: "Designed around real operating work",
     description:
-      "Tanglao, Corp pairs software design with the practical realities of rollout, adoption, and long-term product operation.",
+      "Pang App is shaped for teams that need clearer workflows, stronger accountability, and less friction in day-to-day execution.",
     metric: "Designed for launch and sustained use"
   },
   {
-    title: "Subscription-ready platform management",
+    title: "Subscription-ready from the start",
     description:
-      "From billing-adjacent workflows to customer lifecycle support, the business model is built into the product strategy from day one.",
+      "The platform is intended to support recurring product delivery, ongoing improvements, and a cleaner relationship between product value and customer usage.",
     metric: "Built for recurring revenue products"
   },
   {
@@ -59,18 +59,18 @@ const capabilities: Capability[] = [
     metric: "Enterprise-minded foundations"
   },
   {
-    title: "Continuous improvement, not one-time delivery",
+    title: "Built to evolve over time",
     description:
-      "The company operates what it builds, which keeps roadmaps grounded in real product usage rather than handoff-driven services work.",
+      "Pang App is meant to improve continuously, with product decisions shaped by actual use instead of one-time project handoffs.",
     metric: "Managed beyond launch"
   }
 ];
 
 const signals = [
-  "Multi-product company structure",
-  "Subscription operating model",
+  "A focused software platform",
+  "Subscription-based model",
   "Designed for modern teams",
-  "Credible, focused product roadmap"
+  "Built and operated by Tanglao, Corp"
 ];
 
 const navItems = [
@@ -85,11 +85,11 @@ export default function Home() {
     <main className="page-shell">
       <div className="page-gradient" />
       <header className="topbar">
-        <a className="brand-mark" href="#top" aria-label="Tanglao, Corp home">
-          <span className="brand-pill">TC</span>
+        <a className="brand-mark" href="#top" aria-label="Pang App home">
+          <span className="brand-pill">PA</span>
           <span className="brand-text">
-            <strong>Tanglao, Corp</strong>
-            <span>Software products built to run</span>
+            <strong>Pang App</strong>
+            <span>Software for teams that need clearer operations</span>
           </span>
         </a>
         <nav className="topnav" aria-label="Primary">
@@ -103,35 +103,35 @@ export default function Home() {
 
       <section className="hero-section" id="top">
         <div className="hero-copy">
-          <p className="eyebrow">Parent company for focused software applications</p>
+          <p className="eyebrow">Software platform by Tanglao, Corp</p>
           <h1>
-            Tanglao, Corp creates subscription-based software that feels decisive,
-            dependable, and ready to operate.
+            Pang App helps teams run with more clarity, consistency, and control.
           </h1>
           <p className="hero-body">
-            Built for teams that want modern software without the friction of
-            oversized enterprise systems, Pang App is the public home for the
-            products Tanglao, Corp is launching and managing over time.
+            Pang App is a subscription-based software platform built for teams that
+            need structure without bureaucracy. It brings together operational
+            visibility, workflow discipline, and product-ready reliability in one
+            focused experience.
           </p>
           <div className="hero-actions">
             <a className="button button-primary" href="#products">
-              Explore products
+              Explore Pang App
             </a>
             <a className="button button-secondary" href="#about">
-              How we operate
+              Why Pang App
             </a>
           </div>
         </div>
 
-        <div className="hero-panel" aria-label="Company highlights">
-          <div className="hero-panel-label">Operating model</div>
+        <div className="hero-panel" aria-label="Platform highlights">
+          <div className="hero-panel-label">What it is</div>
           <div className="hero-panel-card">
             <span>01</span>
-            <h2>Owned products, not client work</h2>
+            <h2>A focused platform, not a patchwork of tools</h2>
             <p>
-              Tanglao, Corp develops and manages its own software portfolio, with
-              each application designed around recurring value and long-term product
-              stewardship.
+              Pang App is built to give teams a cleaner operating layer for the
+              work that usually becomes scattered across spreadsheets, inboxes, and
+              disconnected software.
             </p>
           </div>
           <ul className="signal-list">
@@ -144,11 +144,11 @@ export default function Home() {
 
       <section className="section-block" id="products">
         <div className="section-heading">
-          <p className="eyebrow">Product portfolio</p>
-          <h2>Applications designed as a coherent suite, not a loose set of launches.</h2>
+          <p className="eyebrow">Platform components</p>
+          <h2>Pang App is structured as a modern platform with room to expand over time.</h2>
           <p>
-            The initial lineup is represented with placeholder concepts so the site
-            can establish Tanglao, Corp as a multi-product company from day one.
+            These placeholder modules show how Pang App can grow into a fuller
+            product ecosystem while still feeling like one coherent system.
           </p>
         </div>
         <div className="product-grid">
@@ -171,8 +171,8 @@ export default function Home() {
 
       <section className="section-block capability-section" id="capabilities">
         <div className="section-heading compact">
-          <p className="eyebrow">Capabilities</p>
-          <h2>Everything is shaped around operating real SaaS products over time.</h2>
+          <p className="eyebrow">Why it matters</p>
+          <h2>Pang App is designed to be useful in practice, not just impressive in a demo.</h2>
         </div>
         <div className="capability-grid">
           {capabilities.map((capability) => (
@@ -187,31 +187,30 @@ export default function Home() {
 
       <section className="section-block about-grid" id="about">
         <div className="about-copy">
-          <p className="eyebrow">About Tanglao, Corp</p>
-          <h2>A smaller company with a sharper focus: build useful software and keep it running well.</h2>
+          <p className="eyebrow">About Pang App</p>
+          <h2>A software product built to make operational work feel sharper and more manageable.</h2>
           <p>
-            While larger firms often package expertise as a service, Tanglao, Corp
-            is organizing around ownership. The company creates software, brings it
-            to market as a subscription business, and keeps improving the platform
-            as customers use it.
+            Pang App is meant for teams that want stronger process clarity without
+            adopting heavyweight enterprise software. It focuses on the kind of
+            work that benefits from structure, visibility, and dependable follow-through.
           </p>
           <p>
-            That model creates tighter feedback loops, clearer accountability, and a
-            product strategy that stays connected to operational reality.
+            The product is created and operated by Tanglao, Corp, which keeps the
+            company context present without turning the website into a corporate-first pitch.
           </p>
         </div>
         <div className="about-panel">
           <div>
             <span className="panel-label">Who it serves</span>
-            <p>Teams that want software with enterprise discipline and startup speed.</p>
+            <p>Teams that need more structure, visibility, and consistency in how work moves.</p>
           </div>
           <div>
             <span className="panel-label">How it grows</span>
-            <p>By launching focused applications, supporting subscriptions, and compounding product quality.</p>
+            <p>By expanding Pang App thoughtfully into adjacent workflows while keeping the experience unified.</p>
           </div>
           <div>
-            <span className="panel-label">Why this site exists</span>
-            <p>To present Pang App as the front door to the wider Tanglao, Corp product portfolio.</p>
+            <span className="panel-label">Who builds it</span>
+            <p>Tanglao, Corp is the company behind Pang App and its ongoing product development.</p>
           </div>
         </div>
       </section>
@@ -219,17 +218,17 @@ export default function Home() {
       <section className="section-block cta-section" id="contact">
         <div className="cta-card">
           <p className="eyebrow">Next step</p>
-          <h2>See what Tanglao, Corp is building next.</h2>
+          <h2>See where Pang App is headed next.</h2>
           <p>
-            The site is designed to expand into dedicated product pages, launch
-            updates, and company information as the portfolio grows.
+            Pang App is positioned to expand into deeper product detail, launch
+            updates, and clearer use-case pages as the platform matures.
           </p>
           <div className="hero-actions">
             <a className="button button-primary" href="mailto:hello@tanglao.org">
-              Contact Tanglao, Corp
+              Contact the team
             </a>
             <a className="button button-secondary" href="#products">
-              Review the portfolio
+              Review the platform
             </a>
           </div>
         </div>
@@ -237,8 +236,8 @@ export default function Home() {
 
       <footer className="footer">
         <div>
-          <strong>Tanglao, Corp</strong>
-          <p>Pang App is the public website for Tanglao, Corp and its software portfolio.</p>
+          <strong>Pang App</strong>
+          <p>Pang App is built and operated by Tanglao, Corp.</p>
         </div>
         <div className="footer-links">
           {navItems.map((item) => (
