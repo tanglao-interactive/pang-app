@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Pang App | Clearer operations for modern teams",
+  title: "Pang App | Planning and intake software for modern teams",
   description:
-    "Pang App is a subscription-based software platform by Tanglao, Corp, built to help teams work with more clarity and consistency."
+    "Pang App is a software platform by Tanglao, Corp featuring products like Pang Daily Planner and Pang Intake for teams that need clearer planning, intake, and day-to-day execution."
 };
 
 export default function RootLayout({

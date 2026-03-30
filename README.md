@@ -6,6 +6,7 @@ Marketing site for **Pang App**, built with Next.js.
 
 This repository contains the public-facing website for `pang-app.com`. The site presents Tanglao, Corp as the parent company behind a growing portfolio of subscription-based software products.
 This repository contains the public-facing website for `pang-app.com`. The site presents Pang App as the primary product/platform, with Tanglao, Corp positioned as the company behind it.
+This repository contains the public-facing website for `pang-app.com`. The site presents Pang App as a focused family of workflow products, with Tanglao, Corp positioned as the company behind it.
 
 ## Stack
 
@@ -42,6 +43,6 @@ The project is pinned to Node 20 via `.nvmrc` and the `package.json` `engines` f
 
 ## Notes
 
-- The current homepage uses polished placeholder product content so the site can launch before the product portfolio is finalized.
+- The current homepage highlights Pang Daily Planner and Pang Intake as the leading products in the Pang App ecosystem.
 - Styling lives in `app/globals.css`.
 - Main page content lives in `app/page.tsx`.

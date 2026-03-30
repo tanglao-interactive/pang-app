@@ -4,6 +4,7 @@ type Product = {
   description: string;
   status: string;
   cta: string;
+  href: string;
 };
 
 type Capability = {
@@ -17,17 +18,19 @@ const products: Product[] = [
     name: "Pang Daily Planner",
     label: "Daily planning application",
     description:
-      "A focused planning workspace for organizing daily priorities, maintaining momentum, and giving teams a clearer rhythm for execution.",
-    status: "Available soon at daily-planner.pang-app.com",
-    cta: "See Pang Daily Planner"
+      "A focused daily planning workspace for organizing priorities, staying consistent, and turning intention into a clearer day-to-day execution rhythm.",
+    status: "Live application",
+    cta: "Open Daily Planner",
+    href: "https://daily-planner.pang-app.com"
   },
   {
     name: "Pang Intake",
     label: "Intake management application",
     description:
-      "A structured intake experience for capturing requests, organizing submissions, and giving teams a more reliable front door for incoming work.",
+      "A structured intake experience for capturing requests, organizing submissions, and giving teams a dependable front door for incoming work.",
     status: "Live application",
-    cta: "Explore Pang-Intake"
+    cta: "Open Pang Intake",
+    href: "https://intake.pang-app.com"
   }
 ];
 
@@ -35,34 +38,34 @@ const capabilities: Capability[] = [
   {
     title: "Designed around real operating work",
     description:
-      "Pang App is shaped for teams that need clearer workflows, stronger accountability, and less friction in day-to-day execution.",
-    metric: "Designed for launch and sustained use"
+      "Pang App is shaped around recurring work that teams actually need to manage: planning the day, receiving requests, and keeping follow-through visible.",
+    metric: "Built around practical workflows"
   },
   {
-    title: "Subscription-ready from the start",
+    title: "Focused products with a common operating style",
     description:
-      "The platform is intended to support recurring product delivery, ongoing improvements, and a cleaner relationship between product value and customer usage.",
-    metric: "Built for recurring revenue products"
+      "Daily Planner and Pang Intake solve different problems, but they share the same philosophy: reduce friction, improve clarity, and keep work moving.",
+    metric: "Consistent product family"
   },
   {
-    title: "Security and reliability as defaults",
+    title: "Technical depth behind the product decisions",
     description:
-      "The platform posture emphasizes dependable delivery, careful access patterns, and maintainable systems that can scale with customer demand.",
-    metric: "Enterprise-minded foundations"
+      "The broader Tanglao approach leans on user experience, backend systems, and maintainable operations so the product feels clean on the surface and solid underneath.",
+    metric: "UX, backend, and systems thinking"
   },
   {
     title: "Built to evolve over time",
     description:
-      "Pang App is meant to improve continuously, with product decisions shaped by actual use instead of one-time project handoffs.",
-    metric: "Managed beyond launch"
+      "Pang App is meant to improve continuously, with features shaped by real usage and a long-term product mindset rather than one-off delivery.",
+    metric: "Iterated through real use"
   }
 ];
 
 const signals = [
-  "A focused software platform",
-  "Subscription-based model",
+  "Daily planning and intake workflows",
+  "Built for clarity and follow-through",
   "Designed for modern teams",
-  "Built and operated by Tanglao, Corp"
+  "Created by Tanglao, Corp"
 ];
 
 const navItems = [
@@ -97,13 +100,13 @@ export default function Home() {
         <div className="hero-copy">
           <p className="eyebrow">Software platform by Tanglao, Corp</p>
           <h1>
-            Pang App helps teams run with more clarity, consistency, and control.
+            Pang App is a focused software platform for planning work and managing intake with less friction.
           </h1>
           <p className="hero-body">
-            Pang App is a subscription-based software platform built for teams that
-            need structure without bureaucracy. It brings together operational
-            visibility, workflow discipline, and product-ready reliability in one
-            focused experience.
+            Built by Tanglao, Corp, Pang App brings together practical workflow
+            tools like Pang Daily Planner and Pang Intake. The goal is simple:
+            help teams stay organized, receive work clearly, and move with more
+            consistency every day.
           </p>
           <div className="hero-actions">
             <a className="button button-primary" href="#products">
@@ -119,11 +122,11 @@ export default function Home() {
           <div className="hero-panel-label">What it is</div>
           <div className="hero-panel-card">
             <span>01</span>
-            <h2>A focused platform, not a patchwork of tools</h2>
+            <h2>Purpose-built products for how work actually arrives and gets done</h2>
             <p>
-              Pang App is built to give teams a cleaner operating layer for the
-              work that usually becomes scattered across spreadsheets, inboxes, and
-              disconnected software.
+              Pang App focuses on everyday operational pressure points: planning
+              what needs to happen, collecting what comes in, and keeping the next
+              step clear for the team.
             </p>
           </div>
           <ul className="signal-list">
@@ -136,11 +139,12 @@ export default function Home() {
 
       <section className="section-block" id="products">
         <div className="section-heading">
-          <p className="eyebrow">Platform components</p>
-          <h2>Pang App is structured as a modern platform with room to expand over time.</h2>
+          <p className="eyebrow">Products</p>
+          <h2>Pang App brings related workflow products into one clearer ecosystem.</h2>
           <p>
-            These placeholder modules show how Pang App can grow into a fuller
-            product ecosystem while still feeling like one coherent system.
+            The current lineup centers on daily planning and intake management,
+            with room to grow into adjacent tools that keep teams aligned without
+            adding unnecessary complexity.
           </p>
         </div>
         <div className="product-grid">
@@ -154,7 +158,9 @@ export default function Home() {
               <p>{product.description}</p>
               <div className="card-footer">
                 <span className="status-tag">{product.status}</span>
-                <a href="#contact">{product.cta}</a>
+                <a href={product.href} target="_blank" rel="noreferrer">
+                  {product.cta}
+                </a>
               </div>
             </article>
           ))}
@@ -164,7 +170,7 @@ export default function Home() {
       <section className="section-block capability-section" id="capabilities">
         <div className="section-heading compact">
           <p className="eyebrow">Why it matters</p>
-          <h2>Pang App is designed to be useful in practice, not just impressive in a demo.</h2>
+          <h2>Pang App is designed to feel practical, clear, and dependable from the first use.</h2>
         </div>
         <div className="capability-grid">
           {capabilities.map((capability) => (
@@ -180,29 +186,31 @@ export default function Home() {
       <section className="section-block about-grid" id="about">
         <div className="about-copy">
           <p className="eyebrow">About Pang App</p>
-          <h2>A software product built to make operational work feel sharper and more manageable.</h2>
+          <h2>A product family built around the workflows that teams repeat every day.</h2>
           <p>
-            Pang App is meant for teams that want stronger process clarity without
-            adopting heavyweight enterprise software. It focuses on the kind of
-            work that benefits from structure, visibility, and dependable follow-through.
+            Pang App is for teams that want stronger process clarity without
+            adopting heavyweight enterprise software. Its first products focus on
+            planning and intake because those are two of the most common places
+            where work becomes inconsistent, delayed, or hard to track.
           </p>
           <p>
-            The product is created and operated by Tanglao, Corp, which keeps the
-            company context present without turning the website into a corporate-first pitch.
+            It is created and operated by Tanglao, Corp, reflecting Franz
+            Tanglao&apos;s focus on user experience, backend development, and systems
+            administration as part of a practical product-building approach.
           </p>
         </div>
         <div className="about-panel">
           <div>
             <span className="panel-label">Who it serves</span>
-            <p>Teams that need more structure, visibility, and consistency in how work moves.</p>
+            <p>Teams that need more structure, visibility, and consistency in how work gets planned and received.</p>
           </div>
           <div>
             <span className="panel-label">How it grows</span>
-            <p>By expanding Pang App thoughtfully into adjacent workflows while keeping the experience unified.</p>
+            <p>By expanding from planning and intake into adjacent workflows while keeping the overall experience unified.</p>
           </div>
           <div>
             <span className="panel-label">Who builds it</span>
-            <p>Tanglao, Corp is the company behind Pang App and its ongoing product development.</p>
+            <p>Tanglao, Corp is the company behind Pang App, with Franz Tanglao leading the broader product and technical direction.</p>
           </div>
         </div>
       </section>
@@ -210,10 +218,11 @@ export default function Home() {
       <section className="section-block cta-section" id="contact">
         <div className="cta-card">
           <p className="eyebrow">Next step</p>
-          <h2>See where Pang App is headed next.</h2>
+          <h2>Start with the products that already define the Pang App direction.</h2>
           <p>
-            Pang App is positioned to expand into deeper product detail, launch
-            updates, and clearer use-case pages as the platform matures.
+            As Pang App grows, the site can expand into deeper product detail,
+            clearer use cases, and new workflow tools that fit the same operating
+            philosophy.
           </p>
           <div className="hero-actions">
             <a className="button button-primary" href="mailto:hello@tanglao.org">
@@ -229,7 +238,7 @@ export default function Home() {
       <footer className="footer">
         <div>
           <strong>Pang App</strong>
-          <p>Pang App is built and operated by Tanglao, Corp.</p>
+          <p>Pang App is built and operated by Tanglao, Corp, with an emphasis on practical software for planning, intake, and operational clarity.</p>
         </div>
         <div className="footer-links">
           {navItems.map((item) => (
