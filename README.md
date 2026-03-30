@@ -28,6 +28,17 @@ npm run build
 npm start
 ```
 
+## Deploying To AWS Amplify
+
+This repo includes [amplify.yml](/Users/franz.tanglao/GitHub/pang-app/amplify.yml) for Amplify Hosting.
+
+- Connect the repository in AWS Amplify Hosting.
+- Keep the app type as the default Next.js SSR/compute deployment.
+- Amplify will run `npm ci` and `npm run build`.
+- Build artifacts are published from `.next`.
+
+The project is pinned to Node 20 via `.nvmrc` and the `package.json` `engines` field to match Amplify's supported modern runtimes.
+
 ## Notes
 
 - The current homepage uses polished placeholder product content so the site can launch before the product portfolio is finalized.
