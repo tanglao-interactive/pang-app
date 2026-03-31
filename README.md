@@ -44,5 +44,6 @@ The project is pinned to Node 20 via `.nvmrc` and the `package.json` `engines` f
 ## Notes
 
 - The current homepage highlights Pang Daily Planner and Pang Intake as the leading products in the Pang App ecosystem.
+- Favicon source fonts live in `app/static/fonts/`, and the icon can be regenerated with `scripts/generate-favicon.swift`.
 - Styling lives in `app/globals.css`.
 - Main page content lives in `app/page.tsx`.
