@@ -130,7 +130,8 @@ p {
 
 .topnav a:hover,
 .card-footer a:hover,
-.footer-links a:hover {
+.footer-links a:hover,
+.breadcrumb a:hover {
   color: var(--accent-strong);
 }
 
@@ -192,6 +193,13 @@ p {
 .hero-body {
   max-width: 60ch;
   font-size: 1.05rem;
+}
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.9rem;
 }
 
 .hero-actions {
@@ -334,6 +342,7 @@ p {
   display: grid;
   gap: 18px;
   padding: 24px;
+  grid-template-rows: auto 1fr auto;
   animation-delay: 180ms;
 }
 
@@ -348,7 +357,7 @@ p {
 .card-topline,
 .card-footer {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   gap: 16px;
 }
@@ -367,6 +376,11 @@ p {
   line-height: 1.2;
 }
 
+.product-card-body {
+  display: grid;
+  gap: 12px;
+}
+
 .status-tag {
   display: inline-flex;
   align-items: center;
@@ -381,6 +395,40 @@ p {
 
 .card-footer a {
   font-weight: 700;
+}
+
+.product-primary-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 40px;
+  padding: 0 14px;
+  border: 1px solid rgba(15, 23, 32, 0.1);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.6);
+  white-space: nowrap;
+}
+
+.repo-icon-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgba(15, 23, 32, 0.1);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.6);
+  color: var(--accent-strong);
+}
+
+.repo-icon-link svg {
+  width: 18px;
+  height: 18px;
+}
+
+.product-repo-row {
+  display: flex;
+  justify-content: flex-end;
 }
 
 .capability-grid {
@@ -420,6 +468,63 @@ p {
   gap: 22px;
   padding: 24px;
   animation-delay: 200ms;
+}
+
+.product-detail-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(280px, 0.9fr);
+  gap: 22px;
+  align-items: start;
+}
+
+.product-story,
+.product-sidecard,
+.story-card {
+  border: 1px solid var(--line);
+  border-radius: 26px;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(14px);
+  animation: rise-in 0.7s ease both;
+}
+
+.product-story {
+  padding: 24px;
+}
+
+.story-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.story-card {
+  display: grid;
+  gap: 12px;
+  padding: 20px;
+}
+
+.product-sidecard {
+  display: grid;
+  gap: 18px;
+  padding: 24px;
+  animation-delay: 180ms;
+}
+
+.feature-list {
+  display: grid;
+  gap: 12px;
+  margin: 0;
+  padding-left: 1.2rem;
+  color: var(--muted);
+}
+
+.feature-list li::marker {
+  color: var(--accent);
+}
+
+.sidecard-button {
+  width: fit-content;
 }
 
 .cta-section {
@@ -470,8 +575,10 @@ p {
 @media (max-width: 960px) {
   .hero-section,
   .about-grid,
+  .product-detail-grid,
   .product-grid,
-  .capability-grid {
+  .capability-grid,
+  .story-grid {
     grid-template-columns: 1fr;
   }
 
@@ -507,6 +614,10 @@ p {
   .card-footer {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .product-repo-row {
+    justify-content: flex-start;
   }
 
   .hero-copy,

@@ -1,47 +1,11 @@
-type Product = {
-  name: string;
-  label: string;
-  description: string;
-  status: string;
-  cta: string;
-  href: string;
-};
+import Link from "next/link";
+import { products } from "../lib/products";
 
 type Capability = {
   title: string;
   description: string;
   metric: string;
 };
-
-const products: Product[] = [
-  {
-    name: "Pang Daily Planner",
-    label: "Daily planning application",
-    description:
-      "A focused daily planning workspace for organizing priorities, staying consistent, and turning intention into a clearer day-to-day execution rhythm.",
-    status: "Live application",
-    cta: "Open Daily Planner",
-    href: "https://daily-planner.pang-app.com"
-  },
-  {
-    name: "Pang Intake",
-    label: "Intake management application",
-    description:
-      "A structured intake experience for capturing requests, organizing submissions, and giving teams a dependable front door for incoming work.",
-    status: "Live application",
-    cta: "Open Pang Intake",
-    href: "https://intake.pang-app.com"
-  },
-  {
-    name: "Pang DB",
-    label: "PostgreSQL explorer",
-    description:
-      "A database workspace for exploring schemas, browsing rows, and running read-only SQL with a cleaner interface for day-to-day PostgreSQL inspection.",
-    status: "Active project",
-    cta: "Learn about Pang DB",
-    href: "#contact"
-  }
-];
 
 const capabilities: Capability[] = [
   {
@@ -160,16 +124,41 @@ export default function Home() {
           {products.map((product, index) => (
             <article className="product-card" key={product.name}>
               <div className="card-topline">
-                <span>{product.label}</span>
+                <span>{product.shortLabel}</span>
                 <span>{String(index + 1).padStart(2, "0")}</span>
               </div>
-              <h3>{product.name}</h3>
-              <p>{product.description}</p>
+              <div className="product-card-body">
+                <h3>{product.name}</h3>
+                <p>{product.homepageDescription}</p>
+                {product.repoUrl ? (
+                  <div className="product-repo-row">
+                    <a
+                      className="repo-icon-link"
+                      href={product.repoUrl}
+                      target="_blank"
+                      rel="noreferrer"
+                      aria-label={`${product.name} GitHub repository`}
+                      title={`${product.name} GitHub repository`}
+                    >
+                      <svg
+                        aria-hidden="true"
+                        viewBox="0 0 24 24"
+                        focusable="false"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M12 .5C5.65.5.5 5.65.5 12a11.5 11.5 0 0 0 7.86 10.92c.58.11.79-.25.79-.56l-.02-2.17c-3.2.69-3.88-1.35-3.88-1.35-.52-1.34-1.28-1.7-1.28-1.7-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.2 1.77 1.2 1.03 1.77 2.7 1.26 3.36.97.1-.75.4-1.26.73-1.55-2.55-.29-5.23-1.28-5.23-5.68 0-1.25.45-2.28 1.19-3.08-.12-.29-.52-1.47.11-3.06 0 0 .97-.31 3.19 1.18a11.15 11.15 0 0 1 5.8 0c2.22-1.5 3.19-1.18 3.19-1.18.63 1.6.23 2.77.11 3.06.74.8 1.19 1.83 1.19 3.08 0 4.41-2.69 5.39-5.25 5.67.41.36.78 1.08.78 2.19l-.02 3.24c0 .31.21.68.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                ) : null}
+              </div>
               <div className="card-footer">
                 <span className="status-tag">{product.status}</span>
-                <a href={product.href} target="_blank" rel="noreferrer">
+                <Link className="product-primary-link" href={`/products/${product.slug}`}>
                   {product.cta}
-                </a>
+                </Link>
               </div>
             </article>
           ))}
