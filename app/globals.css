@@ -47,6 +47,19 @@ p {
   line-height: 1.7;
 }
 
+.inline-profile-link {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: rgba(13, 92, 99, 0.28);
+  text-underline-offset: 0.18em;
+  transition: text-decoration-color 180ms ease, color 180ms ease;
+}
+
+.inline-profile-link:hover {
+  color: var(--accent-strong);
+  text-decoration-color: rgba(13, 92, 99, 0.58);
+}
+
 .page-shell {
   position: relative;
   overflow: hidden;

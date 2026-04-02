@@ -193,8 +193,17 @@ export default function Home() {
             to track.
           </p>
           <p>
-            It is created and operated by Tanglao, Corp, reflecting Franz
-            Tanglao&apos;s focus on user experience, backend development, and systems
+            It is created and operated by Tanglao, Corp, reflecting
+            {" "}
+            <a
+              className="inline-profile-link"
+              href="https://franz.tanglao.org"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Franz Tanglao
+            </a>
+            &apos;s focus on user experience, backend development, and systems
             administration as part of a practical product-building approach.
           </p>
         </div>
@@ -209,7 +218,18 @@ export default function Home() {
           </div>
           <div>
             <span className="panel-label">Who builds it</span>
-            <p>Tanglao, Corp is the company behind Pang App, with Franz Tanglao leading the broader product and technical direction.</p>
+            <p>
+              Tanglao, Corp is the company behind Pang App, with{" "}
+              <a
+                className="inline-profile-link"
+                href="https://franz.tanglao.org"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Franz Tanglao
+              </a>{" "}
+              leading the broader product and technical direction.
+            </p>
           </div>
         </div>
       </section>
