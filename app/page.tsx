@@ -31,6 +31,15 @@ const products: Product[] = [
     status: "Live application",
     cta: "Open Pang Intake",
     href: "https://intake.pang-app.com"
+  },
+  {
+    name: "Pang DB",
+    label: "PostgreSQL explorer",
+    description:
+      "A database workspace for exploring schemas, browsing rows, and running read-only SQL with a cleaner interface for day-to-day PostgreSQL inspection.",
+    status: "Active project",
+    cta: "Learn about Pang DB",
+    href: "#contact"
   }
 ];
 
@@ -38,13 +47,13 @@ const capabilities: Capability[] = [
   {
     title: "Designed around real operating work",
     description:
-      "Pang App is shaped around recurring work that teams actually need to manage: planning the day, receiving requests, and keeping follow-through visible.",
+      "Pang App is shaped around recurring work that teams actually need to manage: planning the day, receiving requests, exploring data, and keeping follow-through visible.",
     metric: "Built around practical workflows"
   },
   {
     title: "Focused products with a common operating style",
     description:
-      "Daily Planner and Pang Intake solve different problems, but they share the same philosophy: reduce friction, improve clarity, and keep work moving.",
+      "Daily Planner, Pang Intake, and Pang DB solve different problems, but they share the same philosophy: reduce friction, improve clarity, and keep work moving.",
     metric: "Consistent product family"
   },
   {
@@ -62,7 +71,7 @@ const capabilities: Capability[] = [
 ];
 
 const signals = [
-  "Daily planning and intake workflows",
+  "Planning, intake, and data workflows",
   "Built for clarity and follow-through",
   "Designed for modern teams",
   "Created by Tanglao, Corp"
@@ -104,9 +113,9 @@ export default function Home() {
           </h1>
           <p className="hero-body">
             Built by Tanglao, Corp, Pang App brings together practical workflow
-            tools like Pang Daily Planner and Pang Intake. The goal is simple:
-            help teams stay organized, receive work clearly, and move with more
-            consistency every day.
+            tools like Pang Daily Planner, Pang Intake, and Pang DB. The goal is
+            simple: help teams stay organized, receive work clearly, inspect data
+            more easily, and move with more consistency every day.
           </p>
           <div className="hero-actions">
             <a className="button button-primary" href="#products">
@@ -142,9 +151,9 @@ export default function Home() {
           <p className="eyebrow">Products</p>
           <h2>Pang App brings related workflow products into one clearer ecosystem.</h2>
           <p>
-            The current lineup centers on daily planning and intake management,
-            with room to grow into adjacent tools that keep teams aligned without
-            adding unnecessary complexity.
+            The current lineup centers on daily planning, intake management, and
+            practical database exploration, with room to grow into adjacent tools
+            that keep teams aligned without adding unnecessary complexity.
           </p>
         </div>
         <div className="product-grid">
@@ -190,8 +199,9 @@ export default function Home() {
           <p>
             Pang App is for teams that want stronger process clarity without
             adopting heavyweight enterprise software. Its first products focus on
-            planning and intake because those are two of the most common places
-            where work becomes inconsistent, delayed, or hard to track.
+            planning, intake, and data visibility because those are some of the
+            most common places where work becomes inconsistent, delayed, or hard
+            to track.
           </p>
           <p>
             It is created and operated by Tanglao, Corp, reflecting Franz
@@ -206,7 +216,7 @@ export default function Home() {
           </div>
           <div>
             <span className="panel-label">How it grows</span>
-            <p>By expanding from planning and intake into adjacent workflows while keeping the overall experience unified.</p>
+            <p>By expanding from planning, intake, and database tooling into adjacent workflows while keeping the overall experience unified.</p>
           </div>
           <div>
             <span className="panel-label">Who builds it</span>
