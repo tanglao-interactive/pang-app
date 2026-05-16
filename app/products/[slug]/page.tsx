@@ -56,7 +56,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
           <span className="brand-pill">PA</span>
           <span className="brand-text">
             <strong>Pang App</strong>
-            <span>Software for teams that need clearer operations</span>
+            <span>Focused software for clearer work and learning</span>
           </span>
         </Link>
         <nav className="topnav" aria-label="Product page navigation">
@@ -140,8 +140,9 @@ export default async function ProductPage({ params }: ProductPageProps) {
           <p className="eyebrow">Explore further</p>
           <h2>See how {product.name} fits into the larger Pang App product family.</h2>
           <p>
-            Pang App connects planning, intake, and data visibility through focused
-            software products that share a practical operating style.
+            Pang App connects planning, intake, data visibility, learning, and
+            content workflows through focused software products that share a
+            practical operating style.
           </p>
           <div className="hero-actions">
             <Link className="button button-primary" href="/#products">
