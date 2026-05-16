@@ -8,6 +8,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "test:links": "node scripts/check-pages-and-links.mjs",
     "start": "next start",
     "lint": "next lint"
   },

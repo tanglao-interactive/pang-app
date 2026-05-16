@@ -4,9 +4,9 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://pang-app.com"),
-  title: "Pang App | Planning and intake software for modern teams",
+  title: "Pang App | Focused software for clearer work and learning",
   description:
-    "Pang App is a software platform by Tanglao, Corp featuring products like Pang Daily Planner, Pang Intake, and Pang DB for teams that need clearer planning, intake, and day-to-day execution."
+    "Pang App is a software platform by Tanglao, Corp featuring products like Pang Daily Planner, Pang Intake, Pang DB, Pang Learning, and Pang CMS for clearer work, learning, content, and day-to-day execution."
 };
 
 export default function RootLayout({
