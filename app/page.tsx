@@ -11,13 +11,13 @@ const capabilities: Capability[] = [
   {
     title: "Designed around real operating work",
     description:
-      "Pang App is shaped around recurring work people actually need to manage: planning the day, receiving requests, learning with structure, publishing updates, and keeping follow-through visible.",
+      "Pang App is shaped around recurring work people actually need to manage: planning the day, receiving requests, learning with structure, publishing updates, sharing local stories, and keeping follow-through visible.",
     metric: "Built around practical workflows"
   },
   {
     title: "Focused products with a common operating style",
     description:
-      "Daily Planner, Pang Intake, Pang DB, Pang Learning, and Pang CMS solve different problems, but they share the same philosophy: reduce friction, improve clarity, and keep work moving.",
+      "Daily Planner, Pang Intake, Pang DB, Pang Learning, Pang CMS, and Pang Local solve different problems, but they share the same philosophy: reduce friction, improve clarity, and keep work moving.",
     metric: "Consistent product family"
   },
   {
@@ -35,7 +35,7 @@ const capabilities: Capability[] = [
 ];
 
 const signals = [
-  "Planning, intake, data, learning, and content workflows",
+  "Planning, intake, data, learning, content, and local story workflows",
   "Built for clarity and follow-through",
   "Designed for teams, learners, and local organizations",
   "Created by Tanglao, Corp"
@@ -78,9 +78,10 @@ export default function Home() {
           <p className="hero-body">
             Built by Tanglao, Corp, Pang App brings together practical workflow
             tools like Pang Daily Planner, Pang Intake, Pang DB, Pang Learning,
-            and Pang CMS. The goal is simple: help people stay organized, receive
-            work clearly, inspect data more easily, learn with stronger records,
-            and publish useful updates without unnecessary complexity.
+            Pang CMS, and Pang Local. The goal is simple: help people stay
+            organized, receive work clearly, inspect data more easily, learn with
+            stronger records, publish useful updates, and make local stories easier
+            to find without unnecessary complexity.
           </p>
           <div className="hero-actions">
             <a className="button button-primary" href="#products">
@@ -118,7 +119,8 @@ export default function Home() {
           <p>
             The current lineup spans daily planning, intake management, practical
             database exploration, AI-assisted learning, and website/content
-            workflows, with room to grow where real users reveal durable needs.
+            workflows, plus local story publishing for neighborhood businesses and
+            organizations, with room to grow where real users reveal durable needs.
           </p>
         </div>
         <div className="product-grid">
@@ -190,8 +192,8 @@ export default function Home() {
             Pang App is for teams, learners, and organizations that want stronger
             clarity without adopting heavyweight software. Its products focus on
             planning, intake, data visibility, committed learning records, and
-            website updates because those are common places where work becomes
-            inconsistent, delayed, or hard to trust.
+            website and local story updates because those are common places where
+            work becomes inconsistent, delayed, or hard to trust.
           </p>
           <p>
             It is created and operated by Tanglao, Corp, reflecting
@@ -211,11 +213,11 @@ export default function Home() {
         <div className="about-panel">
           <div>
             <span className="panel-label">Who it serves</span>
-            <p>Teams, learners, and local organizations that need more structure, visibility, and consistency in how work, knowledge, and updates move.</p>
+            <p>Teams, learners, local organizations, and neighborhood businesses that need more structure, visibility, and consistency in how work, knowledge, stories, and updates move.</p>
           </div>
           <div>
             <span className="panel-label">How it grows</span>
-            <p>By expanding from planning, intake, database tooling, learning, and content workflows into adjacent needs while keeping the overall experience unified.</p>
+            <p>By expanding from planning, intake, database tooling, learning, content, and local story workflows into adjacent needs while keeping the overall experience unified.</p>
           </div>
           <div>
             <span className="panel-label">Who builds it</span>
@@ -258,7 +260,7 @@ export default function Home() {
       <footer className="footer">
         <div>
           <strong>Pang App</strong>
-          <p>Pang App is built and operated by Tanglao, Corp, with an emphasis on practical software for planning, intake, learning, content, and operational clarity.</p>
+          <p>Pang App is built and operated by Tanglao, Corp, with an emphasis on practical software for planning, intake, learning, content, local stories, and operational clarity.</p>
         </div>
         <div className="footer-links">
           {navItems.map((item) => (

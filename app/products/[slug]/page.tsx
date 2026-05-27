@@ -141,8 +141,8 @@ export default async function ProductPage({ params }: ProductPageProps) {
           <h2>See how {product.name} fits into the larger Pang App product family.</h2>
           <p>
             Pang App connects planning, intake, data visibility, learning, and
-            content workflows through focused software products that share a
-            practical operating style.
+            content workflows with local story publishing through focused software
+            products that share a practical operating style.
           </p>
           <div className="hero-actions">
             <Link className="button button-primary" href="/#products">
