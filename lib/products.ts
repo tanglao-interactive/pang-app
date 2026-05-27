@@ -145,6 +145,31 @@ export const products: Product[] = [
       "Lightweight content update workflow when needed",
       "Reusable templates, delivery practices, and deployment patterns"
     ]
+  },
+  {
+    slug: "pang-local",
+    name: "Pang Local",
+    shortLabel: "Local story publishing",
+    homepageDescription:
+      "A relationship-first local story index that turns real conversations with small businesses and community groups into readable, shareable pages.",
+    landingSummary:
+      "A local story publishing project for small businesses, community groups, artists, churches, choirs, and local organizations that want simple pages people can read, share, crawl, and claim.",
+    status: "Live application",
+    cta: "Open Pang Local",
+    externalUrl: "https://local.pang-app.com",
+    heroTitle: "A local story index for the people and places that make a neighborhood feel known.",
+    heroDescription:
+      "Pang Local turns real conversations with small businesses, community groups, artists, churches, choirs, and local organizations into simple story pages that are easy to read, share, crawl, and claim.",
+    audience:
+      "Local businesses, community groups, artists, churches, choirs, and organizations that need a respectful, low-friction way to become more visible online.",
+    whyItFits:
+      "It gives Pang App a relationship-first publishing path for local discovery, connecting real-world conversations with practical web pages and future website support.",
+    features: [
+      "Readable local story pages",
+      "Searchable public story index",
+      "Claim flow for featured owners and organizations",
+      "A listen-first path into local website and content work"
+    ]
   }
 ];
 
