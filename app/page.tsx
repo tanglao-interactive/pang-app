@@ -41,8 +41,47 @@ const signals = [
   "Created by Tanglao, Corp"
 ];
 
+const createdSites = [
+  {
+    name: "Get Assured Inc.",
+    category: "Mortgage services",
+    description:
+      "A customer-focused mortgage website that makes loan options, resources, and application paths easy to find.",
+    url: "https://getassuredinc.pang-app.com/"
+  },
+  {
+    name: "Voices of St. Gen",
+    category: "Community stories",
+    description:
+      "A story-led community website created to give people, experiences, and shared perspectives a place to be heard.",
+    url: "https://voicesofstgen.com/"
+  },
+  {
+    name: "Dr. Cris Calayan",
+    category: "Professional practice",
+    description:
+      "A polished professional website designed to present Dr. Cris Calayan's work and help visitors connect with the practice.",
+    url: "http://drcriscalayan.com/"
+  },
+  {
+    name: "Franz Tanglao",
+    category: "Personal portfolio",
+    description:
+      "A personal portfolio highlighting software engineering experience, technical perspective, and selected work.",
+    url: "https://franz.tanglao.org/"
+  },
+  {
+    name: "Camille Villanueva",
+    category: "Fashion & e-commerce",
+    description:
+      "An online storefront showcasing contemporary Filipino fashion, handwoven pieces, and the designer's collections.",
+    url: "https://www.camillevillanueva.com/"
+  }
+];
+
 const navItems = [
   { href: "#products", label: "Products" },
+  { href: "#sites", label: "Sites" },
   { href: "#capabilities", label: "Capabilities" },
   { href: "#about", label: "About" },
   { href: "#contact", label: "Contact" }
@@ -164,6 +203,43 @@ export default function Home() {
                 </Link>
               </div>
             </article>
+          ))}
+        </div>
+      </section>
+
+      <section className="section-block sites-section" id="sites">
+        <div className="section-heading">
+          <p className="eyebrow">Sites I created</p>
+          <h2>Web experiences built for distinct people, organizations, and audiences.</h2>
+          <p>
+            A selection of websites I have created across financial services,
+            community storytelling, professional services, personal branding, and
+            fashion e-commerce.
+          </p>
+        </div>
+        <div className="site-grid">
+          {createdSites.map((site, index) => (
+            <a
+              className="site-card"
+              href={site.url}
+              target="_blank"
+              rel="noreferrer"
+              key={site.url}
+              aria-label={`Visit ${site.name} (opens in a new tab)`}
+            >
+              <div className="site-card-topline">
+                <span>{site.category}</span>
+                <span>{String(index + 1).padStart(2, "0")}</span>
+              </div>
+              <div className="site-card-body">
+                <h3>{site.name}</h3>
+                <p>{site.description}</p>
+              </div>
+              <div className="site-card-link">
+                <span>{new URL(site.url).hostname.replace("www.", "")}</span>
+                <span className="site-arrow" aria-hidden="true">↗</span>
+              </div>
+            </a>
           ))}
         </div>
       </section>
