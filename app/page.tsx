@@ -76,6 +76,13 @@ const createdSites = [
     description:
       "An online storefront showcasing contemporary Filipino fashion, handwoven pieces, and the designer's collections.",
     url: "https://www.camillevillanueva.com/"
+  },
+  {
+    name: "Dr. Jeannie Garcia",
+    category: "Professional practice",
+    description:
+      "A professional website created to introduce Dr. Jeannie Garcia's practice, services, and approach to prospective patients.",
+    url: "https://drjeanniegarcia.com/"
   }
 ];
 

@@ -380,10 +380,6 @@ p {
   border-color: rgba(13, 92, 99, 0.35);
 }
 
-.site-card:last-child {
-  grid-column: 1 / -1;
-}
-
 .site-card-topline,
 .site-card-link {
   display: flex;
@@ -684,10 +680,6 @@ p {
   .site-grid,
   .story-grid {
     grid-template-columns: 1fr;
-  }
-
-  .site-card:last-child {
-    grid-column: auto;
   }
 
   .topbar,
